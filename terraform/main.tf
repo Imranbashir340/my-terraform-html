@@ -15,7 +15,7 @@ resource "aws_instance" "web" {
               systemctl start httpd
               systemctl enable httpd
               cd /var/www/html
-              git clone https://github.com/${var.GITHUB_USERNAME}/html-auto-deploy.git site
+              git clone https://github.com/Imranbashir340/my-terraform-html.git site
               cp site/index.html index.html
             EOF
 
